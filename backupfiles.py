@@ -16,7 +16,7 @@ parser.add_argument("--threads", type=int, default=8, help="number of threads to
 args = parser.parse_args()
 
 # Set the list of extensions
-extensions = [".gz",".zip",".tar",".tar.gz",".csv",".doc",".docx",".xls",".xlsx",".sql",".7z",".rar",".dump.sql",".sql.tar.gz",".sql.zip",".bak",".backup",".bakup",".old",".tmp",".log",".db",".sql.bak",".zip.bak",".zip.old",".jar",".bz2",".war",".dll"]
+extensions = [".gz",".tgz",".zip",".tar",".tar.gz",".csv",".doc",".docx",".xls",".xlsx",".sql",".7z",".rar",".dump.sql",".sql.tar.gz",".sql.zip",".bak",".bk",".backup",".bakup",".old",".tmp",".log",".db",".sql.bak",".zip.bak",".zip.old",".jar",".bz2",".war",".dll"]
 
 # Set the User-Agent string
 user_agents = [
