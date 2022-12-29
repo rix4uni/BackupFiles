@@ -61,6 +61,6 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=args.threads) as executor
                 future = executor.submit(requests.get, domain, headers=headers)
                 # Get the result of the request and print it
                 result = future.result()
-                print(domain, result.status_code)
+                print(domain, [result.status_code])
             except KeyboardInterrupt:
                 exit(0)
