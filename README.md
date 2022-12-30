@@ -6,7 +6,7 @@ This tool find BackupFiles
 ```
 git clone https://github.com/rix4uni/BackupFiles.git
 cd BackupFiles
-#pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Example usages
