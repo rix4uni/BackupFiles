@@ -13,12 +13,12 @@ pip3 install -r requirements.txt
 
 Single URL:
 ```
-echo "http://testphp.vulnweb.com" | python3 backupfiles.py
+echo "http://testphp.vulnweb.com" | python3 backupfiles.py -t 100
 ```
 
 Multiple URLs:
 ```
-cat urls.txt | python3 backupfiles.py
+cat urls.txt | python3 backupfiles.py -t 100
 ```
 
 urls.txt contains:
