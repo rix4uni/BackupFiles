@@ -10,7 +10,7 @@ import random
 parser = argparse.ArgumentParser()
 
 # Add an argument for the number of threads
-parser.add_argument("--threads", type=int, default=8, help="number of threads to use")
+parser.add_argument("-t","--threads", type=int, default=8, help="number of threads to use")
 
 # Parse the command-line arguments
 args = parser.parse_args()
