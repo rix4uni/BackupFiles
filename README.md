@@ -7,18 +7,21 @@ This tool find BackupFiles
 git clone https://github.com/rix4uni/BackupFiles.git
 cd BackupFiles
 pip3 install -r requirements.txt
+mkdir -p ~/bin
+echo -e "\nalias backupfiles='python3 ~/bin/BackupFiles/backupfiles.py'" >> ~/.bashrc
+cd .. && mv BackupFiles ~/bin && source ~/.bashrc
 ```
 
 ## Example usages
 
 Single URL:
 ```
-echo "http://testphp.vulnweb.com" | python3 backupfiles.py -t 100
+echo "http://testphp.vulnweb.com" | backupfiles -t 100
 ```
 
 Multiple URLs:
 ```
-cat urls.txt | python3 backupfiles.py -t 100
+cat urls.txt | backupfiles -t 100
 ```
 
 urls.txt contains:
