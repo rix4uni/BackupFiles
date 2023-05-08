@@ -62,5 +62,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=args.threads) as executor
                 # Get the result of the request and print it
                 result = future.result()
                 print(domain, [result.status_code])
+            except requests.exceptions.SSLError as e:
+                pass
             except KeyboardInterrupt:
                 exit(0)
